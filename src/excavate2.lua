@@ -1,3 +1,4 @@
+-- Original: https://www.computercraft.info/wiki/Excavate
 local tArgs = { ... }
 if #tArgs ~= 3 then
     print( "Usage: dig <width> <height> <depth>" )
