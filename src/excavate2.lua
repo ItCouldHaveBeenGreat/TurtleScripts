@@ -1,6 +1,6 @@
 local tArgs = { ... }
-if #tArgs ~= 1 then
-    print( "Usage: excavate <diameter>" )
+if #tArgs ~= 3 then
+    print( "Usage: dig <width> <height> <depth>" )
     return
 end
 
@@ -9,7 +9,7 @@ local widthLimit = tonumber( tArgs[1] )
 local heightLimit = tonumber( tArgs[2] )
 local depthLimit = tonumber( tArgs[3] )
 if widthLimit < 1 or heightLimit < 1 or depthLimit < 1 then
-    print( "Excavate parameters must be positive" )
+    print( "Dig parameters must be positive" )
     return
 end
 
